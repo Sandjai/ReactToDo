@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^5.23.2",
     "cra-template-typescript": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -33,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
     "@types/react": "^19.0.7",
@@ -41,6 +43,7 @@
     "eslint": "^8.57.1",
     "eslint-config-react-app": "^7.0.1",
     "jest": "^27.5.1",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3"
   }
 }

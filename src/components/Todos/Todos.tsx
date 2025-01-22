@@ -31,5 +31,23 @@ export const Todos = () => {
 		getTodos();
 	}, []);
 
-	return <div className={styles.root}>{todosArr.length > 0 ? todosArr.map(todo => <Todo todo={todo}></Todo>) : <Spin size="large"></Spin>}</div>;
+	return (
+		<div className={styles.root}>
+			<div className={styles.content}>
+				<ul className={styles.todoList}>
+					{todosArr.length > 0 ? (
+						todosArr.map((todo: ITodo) => (
+							<li key={todo.id}>
+								<Todo todo={todo}></Todo>
+							</li>
+						))
+					) : (
+						<Spin size="large"></Spin>
+					)}
+				</ul>
+			</div>
+			<div className={styles.dummyContent_1}></div>
+			<div className={styles.dummyContent_2}></div>
+		</div>
+	);
 };

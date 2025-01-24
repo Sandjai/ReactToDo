@@ -7,6 +7,7 @@ import { Spin } from 'antd';
 import { Footer } from '../Footer/Footer';
 import { FILTERS } from '../../constants/ui';
 import { filterToDo } from '../../utils/filterTodo';
+import { Modal } from '../Modal/Modal';
 
 const reducer = (state: IState, action: IAction): IState => {
 	switch (action.type) {
@@ -28,6 +29,12 @@ export const Todos = () => {
 	};
 
 	const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+
+	const [showModal, setShowModal] = useState(false);
+
+	function toggleModal() {
+		setShowModal(!showModal);
+	}
 
 	useEffect(() => {
 		//TODO: Поменять на настоящий запрос
@@ -110,7 +117,7 @@ export const Todos = () => {
 					{state.filteredTodos.length > 0 ? (
 						state.filteredTodos.map((todo: ITodo) => (
 							<li key={todo.id}>
-								<Todo todo={todo} addTodo={addTodo} checkToDo={checkToDo} deleteToDo={deleteToDo}></Todo>
+								<Todo todo={todo} addTodo={addTodo} toggleModal={toggleModal} checkToDo={checkToDo} deleteToDo={deleteToDo}></Todo>
 							</li>
 						))
 					) : (
@@ -121,6 +128,14 @@ export const Todos = () => {
 			<Footer state={state} dispatch={dispatch} className={styles.footer}></Footer>
 			<div className={styles.dummyContent_1}></div>
 			<div className={styles.dummyContent_2}></div>
+
+			{showModal ? (
+				<Modal>
+					<button onClick={toggleModal}>X</button>
+				</Modal>
+			) : (
+				''
+			)}
 		</div>
 	);
 };

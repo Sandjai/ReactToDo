@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "title": "Тестовое задание",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "title": "Прекрасный код",
+        "completed": true
+    },
+    {
+        "id": 3,
+        "title": "Покрытие тестами",
+        "completed": true
+    },
+    {
+        "id": 4,
+        "title": "Документация проекта",
+        "completed": true
+    },
+    {
+        "id": 5,
+        "title": "Интеграция с API",
+        "completed": false
+    },
+    {
+        "id": 6,
+        "title": "Оптимизация производительности",
+        "completed": false
+    },
+    {
+        "id": 7,
+        "title": "Исправление багов",
+        "completed": false
+    },
+    {
+        "id": 8,
+        "title": "Рефакторинг кода",
+        "completed": false
+    },
+    {
+        "id": 9,
+        "title": "Создание README",
+        "completed": false
+    },
+    {
+        "id": 10,
+        "title": "Проведение Code Review",
+        "completed": false
+    },
+    {
+        "id": 11,
+        "title": "Написание тестов",
+        "completed": false
+    },
+    {
+        "id": 12,
+        "title": "Настройка CI/CD",
+        "completed": false
+    },
+    {
+        "id": 13,
+        "title": "Создание документации",
+        "completed": false
+    },
+    {
+        "id": 14,
+        "title": "Анализ требований",
+        "completed": false
+    },
+    {
+        "id": 15,
+        "title": "Завершение итерации",
+        "completed": false
+    }
+]

@@ -3,7 +3,7 @@ import React, { useEffect, useReducer } from 'react';
 import './App.sass';
 import { Todos } from './components/Todos/Todos';
 import { Layout } from './components/Layout/Layout';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { Todo } from './components/Todo/Todo';
 import { HomePage } from './pages/HomePage';
 import { TodoPage } from './pages/TodoPage';
@@ -53,14 +53,14 @@ const App: React.FC = () => {
 
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<HashRouter>
 				<Layout>
 					<Routes>
 						<Route index element={<HomePage state={state} dispatch={dispatch} />} />
 						<Route path=":todoId" element={<TodoPage state={state} dispatch={dispatch} />} />
 					</Routes>
 				</Layout>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 };

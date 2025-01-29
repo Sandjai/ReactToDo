@@ -2,6 +2,7 @@
   "name": "reacttodo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sandjai.github.io/ReactToDo/",
   "dependencies": {
     "@ant-design/icons": "^5.6.0",
     "antd": "^5.23.2",
@@ -12,6 +13,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -46,6 +49,7 @@
     "classnames": "^2.5.1",
     "eslint": "^8.57.1",
     "eslint-config-react-app": "^7.0.1",
+    "gh-pages": "^6.3.0",
     "jest": "^27.5.1",
     "sass": "^1.83.4",
     "typescript": "^4.9.5"

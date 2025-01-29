@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import styles from './styles.module.sass';
 import { IFilter, IDispatch, ITodo, IState } from '../../types/types';
-import { filterToDo } from '../../utils/filterTodo';
+import { filterToDo } from '../../utils/utils';
 
 interface ITabProps {
 	name: IFilter;

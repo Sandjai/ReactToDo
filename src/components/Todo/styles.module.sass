@@ -3,12 +3,12 @@
 .root
     border-bottom: 1px solid #e9e9e9
     padding: 1em .25em 1em 2em
-    font-size: 1.25em
-    cursor: pointer
-    display: inline-flex
+    font-size: 1.25em    
+    display: flex
     width: calc(100% - 2.3em)
     align-items: center
-    column-gap: .85em
+    column-gap: 1em
+    justify-content: space-between
 
     &:hover
         background-color: #f8f4f4
@@ -16,3 +16,22 @@
 .completed
     text-decoration: line-through
     opacity: .7
+
+.col1
+    display: inline-flex
+    align-items: center
+    column-gap: .85em
+
+.col2
+    display: flex
+    align-items: center
+    column-gap: 1em
+    padding-right: 1em
+    
+.editIcon
+    transition: opacity .3s ease
+    font-size: 20px
+    color: #444444
+    opacity: 0.8
+    &:hover
+        opacity: 1

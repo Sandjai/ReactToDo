@@ -32,4 +32,5 @@ export interface IAction {
 	};
 }
 
+
 export type IActionType = 'updateTodo' | 'changeFilter' | 'checkCheckbox';
